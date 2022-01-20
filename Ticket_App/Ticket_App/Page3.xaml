@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ticket_App.Page3"
+             Title ="Information"
+             IconImageSource="ticket.png"
+             >
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="Label11" Text="TICKET INFORMATIONS" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" Margin="20"/>
+            <Button x:Name="Button_35" Text="Show My Film Informations" FontAttributes="Bold" HorizontalOptions="Center" HeightRequest="60" FontSize="20" Margin="15" Clicked="Button_35_Clicked"/>
+
+            <ListView x:Name="Film_XAML_List" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding ID}"/>
+                                <Label Text="{Binding FilmName}"/>
+                                <Label Text="{Binding SeatNumber}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="Button_36" Text="Show My Informations" FontAttributes="Bold" HorizontalOptions="Center" HeightRequest="60" FontSize="20" Margin="15" Clicked="Button_36_Clicked"/>
+
+            <ListView x:Name="Cus_XAML_List" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding ID}"/>
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding Phone}"/>
+                                <Label Text="{Binding Email}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

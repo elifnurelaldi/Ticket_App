@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ticket_App.Page2"
+             Title ="Payment"
+             IconImageSource="Payment.png">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Label x:Name="Label11" Text="CONTACT INFORMATIONS" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" Margin="0,20,0,0"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="Label7" Text="Name :" FontSize="15" TextColor="Black" VerticalTextAlignment="Center"/>
+                <Entry x:Name="Entry1" FontSize="15" TextColor="Black" WidthRequest="170" VerticalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="Label8" Text="Phone :" FontSize="15" TextColor="Black" VerticalTextAlignment="Center"/>
+                <Entry x:Name="Entry2" FontSize="15" TextColor="Black" WidthRequest="170" VerticalTextAlignment="Center" Keyboard="Telephone"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="Label9" Text="E-mail :" FontSize="15" TextColor="Black"  VerticalTextAlignment="Center"/>
+                <Entry x:Name="Entry3" FontSize="20" TextColor="Black" WidthRequest="170" VerticalTextAlignment="Center" Keyboard="Email"/>
+            </StackLayout>
+            <Label x:Name="Label12" Text="PAYMENT INFORMATIONS" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" Margin="0,30,0,0" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="Label13" Text="Name on the card :" FontSize="15" TextColor="Black" VerticalTextAlignment="Center"/>
+            <Entry x:Name="Entry5" FontSize="15" TextColor="Black" WidthRequest="170" VerticalTextAlignment="Center" />
+             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="Label14" Text="Card Number :" FontSize="15" TextColor="Black" VerticalTextAlignment="Center"/>
+                <Entry x:Name="Entry6" FontSize="15" TextColor="Black" WidthRequest="160" VerticalTextAlignment="Center" Keyboard="Numeric"/>
+                </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="Label15" Text="Exp.date :" FontSize="15" TextColor="Black"  VerticalTextAlignment="Center"/>
+                <Entry x:Name="Entry7" FontSize="20" TextColor="Black" WidthRequest="60" VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="Label16" Text="CVV :" FontSize="20" TextColor="Black"  VerticalTextAlignment="Center" />
+                <Entry x:Name="Entry8" FontSize="15" TextColor="Black" WidthRequest="50" VerticalTextAlignment="Center" Keyboard="Numeric"/>
+            </StackLayout>
+            <Button x:Name="Button_34" Text="PAY NOW!!" FontSize="20" FontAttributes="Bold" Margin="25" Clicked="Button_34_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

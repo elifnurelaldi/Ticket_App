@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="Ticket_App.Page1"
+             Title ="Selection"
+             IconImageSource="Date.png">
+    <ContentPage.Content>
+        
+        <StackLayout Orientation="Vertical">
+            <Image Source="logo.png"/>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="Label1" Text="Movie : " FontSize="20" TextColor="Black"  FontAttributes="Bold" VerticalTextAlignment="Center"/>
+            <Picker x:Name="picker1" WidthRequest="250" Title="Select">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Spider-Man: No Way Home</x:String>
+                        <x:String>The King's Man</x:String>
+                        <x:String>Scream</x:String>
+                        <x:String>Venom: Let There Be Carnage</x:String>
+                        <x:String>Belle</x:String>
+                        <x:String>Eternals</x:String>
+                        <x:String>Sing 2</x:String>
+                        <x:String>Encanto</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+                </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Label x:Name="Label2" Text="Date : " FontSize="20" TextColor="Black"  FontAttributes="Bold" VerticalTextAlignment="Center"/>
+                <DatePicker></DatePicker>
+                <Label x:Name="Label3" Text="Time : " FontSize="20" TextColor="Black"  FontAttributes="Bold" VerticalTextAlignment="Center"/>
+                <TimePicker></TimePicker>
+            </StackLayout>
+
+            <Label x:Name="Label4" Text="Please Select Seat" FontSize="20" TextColor="Black"  FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="Center" Margin="10"/>
+            <Label x:Name="Label5" Text="Red:Full Seat--Green:Empty Seat--Yellow:Selected Seat" FontSize="16" TextColor="Black"  VerticalTextAlignment="Center" HorizontalOptions="Center" Margin="0,0,0,10"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="Button_1" Text="1A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_2" Text="2A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_2_Clicked"/>
+                <Button x:Name="Button_3" Text="3A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_3_Clicked" />
+                <Button x:Name="Button_4" Text="4A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_5" Text="5A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_6" Text="6A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_6_Clicked"/>
+                <Button x:Name="Button_7" Text="7A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_7_Clicked"/>
+                <Button x:Name="Button_8" Text="8A" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="Button_9" Text="1B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_9_Clicked"/>
+                <Button x:Name="Button_10" Text="2B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_11" Text="3B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_12" Text="4B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_12_Clicked"/>
+                <Button x:Name="Button_13" Text="5B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_14" Text="6B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_14_Clicked"/>
+                <Button x:Name="Button_15" Text="7B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_16" Text="8B" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="Button_17" Text="1C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_18" Text="2C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_19" Text="3C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_19_Clicked"/>
+                <Button x:Name="Button_20" Text="4C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_20_Clicked"/>
+                <Button x:Name="Button_21" Text="5C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_22" Text="6C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_22_Clicked"/>
+                <Button x:Name="Button_23" Text="7C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_23_Clicked"/>
+                <Button x:Name="Button_24" Text="8C" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="Button_25" Text="1D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_26" Text="2D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_26_Clicked"/>
+                <Button x:Name="Button_27" Text="3D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_27_Clicked"/>
+                <Button x:Name="Button_28" Text="4D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_29" Text="5D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+                <Button x:Name="Button_30" Text="6D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_30_Clicked"/>
+                <Button x:Name="Button_31" Text="7D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="LightGreen" Clicked="Button_31_Clicked"/>
+                <Button x:Name="Button_32" Text="8D" WidthRequest="45" FontAttributes="Bold" BackgroundColor="IndianRed"/>
+            </StackLayout>
+
+            <Label x:Name="Label6" Text="- - - - - - - - - - - - - - SCENE - - - - - - - - - - - - - -" FontSize="20" TextColor="Black" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="Label17" FontSize="20" TextColor="Black"  FontAttributes="Bold" VerticalTextAlignment="Center" Margin="10" />
+                <Label x:Name="Label18" Text="          " FontSize="30"/>
+                <Button x:Name="Button_33" Text="Confirm Seat!!" FontAttributes="Bold" Clicked="Button_33_Clicked" HeightRequest="45" FontSize="20"/>
+                </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
